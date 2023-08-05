@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-const classComponents = () => {
-  return (
-    <h1>Hello Bangladesh</h1>
-  )
+
+// Class Based Componente
+class classComponents extends Component {
+  render() {
+    return <h1>Welcome To {this.props.country}</h1>
+  }
 }
 
 export default classComponents;
