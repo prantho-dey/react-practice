@@ -4,7 +4,8 @@ import './App.css';
 
 import Components from './components/classComponents';
 import Check from './components/props_style';
-
+import Message from './components/Message';
+import Counter from './components/Counter';
 
 
 
@@ -22,6 +23,13 @@ function App() {
 
       <Components country="Bangladesh"/>
       <Components country="India"/>
+
+
+      <Message />
+
+
+      <Counter />
+
     </div>
   );
 }
