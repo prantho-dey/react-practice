@@ -7,48 +7,54 @@ class UserGreeting extends Component {
         super(props)
 
         this.state = {
-            isLoggedIn: true
+            isLoggedIn : true
         }
     }
 
     render() {
         // if else Condation ======== Approach 1 ==============
-        /* if (this.state.isLoggedIn) {    
+        /*
+        if(this.state.isLoggedIn) {
             return (
-                 <h1>Welcome Prantho</h1>
+                <h1>Hello Prantho</h1>
             )
-        }else {
+        } else {
             return (
-                <h1>Welcome Guest</h1>
-           )
-        } */
-
+                <h1>Hello Guest</h1>
+            )
+        }
+        */
 
         // Element Variables ======== Approach 2 ==============
+        /*
+        let message;
 
-        /* 
-        let Message
-        if(this.state.isLoggedIn) {
-            Message = <h1>Welcome Prantho</h1>
-        }else {
-            Message = <h1>Welcome Guest</h1>
+        if (this.state.isLoggedIn) {
+            message = <h1>Hello Prantho</h1> 
+        } else {
+            message = <h1>Hello Guest</h1>
         }
-
-        return <div>{Message}</div>
+        
+        return (message)
         */
+       
 
         // Ternary Conditional Operator ======== Approach 3 ============== ** Prefearence
 
         /*
-        return this.state.isLoggedIn ? (
-            <h1>Welcome Prantho</h1>
-        ) : (
-            <h1>Welcome Guest</h1>
+        return (
+            this.state.isLoggedIn ? (
+                <h1>Welcome Prantho</h1> 
+            ) : (
+                <h1>Welcome Guest</h1>
+            )
         )
         */
+        
 
         // Short Cercuite Operator ======== Approach 4 ============== * Prefearence
         return this.state.isLoggedIn && <h1>Welcome Prantho</h1>
+        
     }
 }
 

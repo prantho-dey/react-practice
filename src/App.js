@@ -9,7 +9,7 @@ import Counter from './components/Counter';
 import FuncationClick from './components/FuncationClick';
 import ClassClick from './components/ClassClick';
 import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
+import UserGreeting from './components/Condiotio';
 
 
 
